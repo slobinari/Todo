@@ -2,17 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo list</title>
+    <title>Todo List</title>
+    <script
+      src="https://kit.fontawesome.com/79aa1d78c3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Todo List</h1>
-    <p id="first">Get it done today:</p>
-    <input id="userinput" type="text" placeholder="enter items" />
-    <button id="enter">Add</button>
-    <button id="remove">Remove</button>
-    <ul></ul>
+    <div class="wrapper">
+      <header>Todo App</header>
+      <div class="inputField">
+        <input type="text" placeholder="Add your new todo" />
+        <button><i class="fas fa-plus"></i></button>
+      </div>
+      <ul class="todoList"></ul>
+      <div class="footer">
+        <span>You have <span class="pendingTasks"></span> pending tasks</span>
+        <button>Clear All</button>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
